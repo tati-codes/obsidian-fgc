@@ -1,4 +1,6 @@
 # Translate numpad notation to motion inputs
+![](./numpad.gif)
+
 Surround your numpad notation with !! and it will translate it to motion inputs in reading mode
 
 Ex:
