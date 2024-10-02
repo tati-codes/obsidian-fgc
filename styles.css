@@ -1,8 +1,60 @@
-/*
+:root {
+  --light: #3a8299;
+  --medium: #9b9b3a;
+  --heavy: #b23a3a;
+  --lighter: #7cffff;
+  --mediumer: #ffff60;
+  --heavier: #fd9898; 
+  --font-size: 200px;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+@font-face {
+  font-family: "FGC";
+  src: url(data:application/octet-stream;base64,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);
+}
 
-If your plugin does not need CSS, delete this file.
+.fgc {
+font-family: "FGC";
+font-size: 25px;
+}
 
-*/
+.light{
+  color: var(--light);
+
+}
+.medium{
+  color: var(--medium);
+
+}
+.heavy{
+  color: var(--heavy);
+}
+
+.rush {
+  color:#caf731;
+}
+
+/* .light:before {
+  font-family: "FGC";
+  content: "O";
+  position: relative;
+  left: var(--font-size);
+  z-index: -2;
+  color: var(--lighter);
+}
+.medium:before {
+  font-family: "FGC";
+  content: "O";
+  position: relative;
+  left: var(--font-size);
+  z-index: -2;
+  color: var(--mediumer);
+}
+.heavy:before {
+  font-family: "FGC";
+  content: "O";
+  position: relative;
+  left: var(--font-size);
+  z-index: -2;
+  color: var(--heavier);
+} */
